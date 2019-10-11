@@ -15,7 +15,7 @@ const Banner = ({ title, image, subtitle, boton, color, home, poster }) => {
               <div className='main-banner__data s-center'>
                 <h1 className='main-banner__title'>{title}</h1>
                 <p className=''>{subtitle}</p>
-                <Link to='/cursos' className='button second-color'>
+                <Link to='/cursos' className='button second-color s-mb-2'>
                   {boton}
                 </Link>
               </div>

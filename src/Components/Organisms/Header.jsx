@@ -1,9 +1,7 @@
 import React, { createRef } from 'react';
 import { NavLink } from 'react-router-dom';
-//import logo from '../../Images/logo.svg';
 
 const menu = createRef();
-console.log(menu);
 
 const toggleMenu = () => menu.current.classList.toggle('show');
 
