@@ -39,7 +39,11 @@ const Seminars = ({ seminars }) => {
                   <p>{s.resumen}</p>
                   <div className='ed-grid m-grid-6'>
                     <div className='m-cols-2 s-mb-1'>
-                      <a href='' className='button ghost third-color full'>
+                      <a
+                        href={s.url_form}
+                        target='_blank'
+                        className='button ghost third-color full'
+                      >
                         Inscribirse
                       </a>
                     </div>

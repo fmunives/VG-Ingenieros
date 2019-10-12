@@ -16,6 +16,23 @@
 </head>
 
 <body>
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyCEc8Mp7h2T0i6-ai9mnRZTA9hQFG8v364",
+      authDomain: "vg-ingenieros.firebaseapp.com",
+      databaseURL: "https://vg-ingenieros.firebaseio.com",
+      projectId: "vg-ingenieros",
+      storageBucket: "vg-ingenieros.appspot.com",
+      messagingSenderId: "479498915105",
+      appId: "1:479498915105:web:ae96901232c452a3198260",
+      measurementId: "G-P5B14H54HD"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script src="./conexionContact.js"></script>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>

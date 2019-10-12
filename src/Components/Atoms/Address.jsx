@@ -2,9 +2,9 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 
-const Address = ({ color, size }) => {
+const Address = ({ color, size, address, target }) => {
   return (
-    <a href='https://goo.gl/maps/WArUZRJEWTLNazJ47' className='t-dark-color'>
+    <a href={address} className='t-dark-color' target={target}>
       <span className={color}>
         {' '}
         <FontAwesomeIcon icon={faHome} /> {''}

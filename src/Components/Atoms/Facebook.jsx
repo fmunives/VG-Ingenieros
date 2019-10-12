@@ -8,6 +8,7 @@ const Facebook = ({ color, size }) => {
       href='https://www.facebook.com/IngeninierosSAC/'
       target='_blank'
       className={color}
+      rel=''
     >
       <FontAwesomeIcon icon={faFacebook} size={size} />
     </a>

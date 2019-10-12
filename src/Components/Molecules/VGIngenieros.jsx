@@ -11,7 +11,11 @@ const VGIngenieros = () => {
           <City color='t-second-color' />
         </li>
         <li>
-          <Address color='t-second-color' />
+          <Address
+            color='t-second-color'
+            address='https://goo.gl/maps/WArUZRJEWTLNazJ47'
+            target='_blank'
+          />
         </li>
       </ul>
     </div>

@@ -14,7 +14,7 @@ const NetworkingVG = () => {
           <Facebook size='2x' />
         </li>
         <li>
-          <Twitter size='2x' />
+          <Twitter size='2x' address='https://twitter.com/VYGIngenieros' />
         </li>
         <li>
           <YouTube size='2x' />

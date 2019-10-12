@@ -9,7 +9,7 @@ const ConectWithUs = () => {
       <h2 className='t6 color-alt'>Conéctate con VB Ingenieros</h2>
       <ul>
         <li>
-          <Email />
+          <Email large />
         </li>
         <li>
           <Phone color='t-second-color' />

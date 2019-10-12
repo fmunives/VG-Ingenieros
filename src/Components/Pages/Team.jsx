@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Banner from '../Organisms/Banner';
 import CardMember from '../Molecules/CardMember';
+import { connect } from 'react-redux';
+import store from '../../Redux/store';
+import { getAllTeam } from '../../Redux/actionsCreator';
 
-const Team = () => {
+const Team = ({ team }) => {
+  useEffect(() => {
+    store.dispatch(getAllTeam());
+  }, []);
   return (
     <>
       <Banner
@@ -15,17 +21,29 @@ const Team = () => {
           alt: 'Seminario'
         }}
       />
-      <div className='ed-grid m-grid-3 lg-grid-4'>
-        <CardMember />
-        <CardMember />
-        <CardMember />
-        <CardMember />
-        <CardMember />
-        <CardMember />
-        <CardMember />
-      </div>
+      {team && (
+        <div className='ed-grid m-grid-3 lg-grid-4'>
+          {team.map(t => (
+            <CardMember
+              title={t.nombre}
+              image={t.url}
+              subtitle={t.subtitulo}
+              twitter={t.twitter}
+              linkedIn={t.linkedIn}
+              email={t.email}
+            />
+          ))}
+        </div>
+      )}
     </>
   );
 };
 
-export default Team;
+const mapStateToProps = state => ({
+  team: state.teamReducer.team
+});
+
+export default connect(
+  mapStateToProps,
+  {}
+)(Team);
