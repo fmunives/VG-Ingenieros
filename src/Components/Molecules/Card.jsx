@@ -20,7 +20,7 @@ const Card = ({ image, image_teacher, teacher, price, title }) => {
         </div>
         <div className='s-main-center'>
           <a className='button--ghost-alert button--tiny' href='#'>
-            $ 20USD
+            {price}
           </a>
         </div>
       </div>

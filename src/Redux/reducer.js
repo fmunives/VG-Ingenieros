@@ -3,7 +3,8 @@ import {
   SHOW_COURSE,
   SHOW_SEMINARS,
   SHOW_SEMINAR,
-  SHOW_TEAM
+  SHOW_TEAM,
+  SHOW_TEACHERS
 } from './actions';
 
 export const coursesReducer = (state = {}, actions) => {
@@ -41,6 +42,15 @@ export const teamReducer = (state = {}, actions) => {
     return {
       ...state,
       team: actions.team
+    };
+  }
+  return state;
+};
+export const teachersReducer = (state = {}, actions) => {
+  if (actions.type === SHOW_TEACHERS) {
+    return {
+      ...state,
+      teachers: actions.teachers
     };
   }
   return state;
