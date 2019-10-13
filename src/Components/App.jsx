@@ -11,6 +11,7 @@ import Home from './Pages/Home';
 import { Provider } from 'react-redux';
 import store from '../Redux/store';
 import Footer from './Organisms/Footer';
+import Course from './Pages/Course';
 
 const App = () => (
   <Provider store={store}>
@@ -18,6 +19,7 @@ const App = () => (
       <Header />
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/cursos/:id' component={Course} />
         <Route path='/cursos' component={Courses} />
         <Route path='/seminarios' component={Seminars} />
         <Route path='/porque' component={WhyUs} />

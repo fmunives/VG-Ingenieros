@@ -1,7 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Banner = ({ title, image, subtitle, boton, color, home, poster }) => {
+const Banner = ({
+  title,
+  image,
+  subtitle,
+  boton,
+  color,
+  home,
+  poster,
+  courseBanner,
+  colorBoton,
+  content
+}) => {
   return (
     <div
       className={`main-banner l-block img-container ${color}`}
@@ -21,6 +32,26 @@ const Banner = ({ title, image, subtitle, boton, color, home, poster }) => {
               </div>
               <div className='img-container s-ratio-16-9 s-radius-tr s-radius-tl s-radius-bl s-radius-br'>
                 <img src={poster} alt='Grupo VG Ingenieros' />
+              </div>
+            </div>
+          ) : courseBanner ? (
+            <div className='ed-grid m-grid-3'>
+              <div className='main-banner__data m-cols-2'>
+                <h1 className='main-banner__title s-mb-0'>{title}</h1>
+                <p className='s-opacity-6'>{subtitle}</p>
+                <p>{content}</p>
+                <div className='m-50'>
+                  <a
+                    href='https://forms.gle/xGcuV8ckSHD6zSXh9'
+                    target='_blank'
+                    className={`button ${colorBoton} s-mb-2 full big`}
+                  >
+                    {boton}
+                  </a>
+                </div>
+              </div>
+              <div className='img-container s-ratio-16-9 m-cols-1 s-radius-tr s-radius-tl s-radius-bl s-radius-br'>
+                <img src={poster} alt={title} />
               </div>
             </div>
           ) : (

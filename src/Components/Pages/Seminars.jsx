@@ -40,7 +40,7 @@ const Seminars = ({ seminars }) => {
                   <div className='ed-grid m-grid-6'>
                     <div className='m-cols-2 s-mb-1'>
                       <a
-                        href={s.url_form}
+                        href={s.inscripcion}
                         target='_blank'
                         className='button ghost third-color full'
                       >

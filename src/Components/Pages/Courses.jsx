@@ -25,6 +25,7 @@ const Courses = ({ courses }) => {
         <div className='ed-grid m-grid-3 lg-grid-4'>
           {courses.map(c => (
             <Card
+              id={c.id}
               title={c.titulo}
               teacher={c.teacher}
               image={c.url}

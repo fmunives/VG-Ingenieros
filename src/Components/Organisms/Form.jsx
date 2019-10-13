@@ -8,8 +8,8 @@ const Form = () => {
         {/* <h3>¿Cómo puedo ayudarte?</h3>
         <p>Coloque sus datos y en breve nos comunicaremos con usted</p> */}
         <Iframe
-          src='https://docs.google.com/forms/d/e/1FAIpQLSfu5YbpXtQlhllYE7DQsGsPCBcSPXHjRqQJlJY6gTBMRl8cTw/viewform?embedded=true'
-          width='750'
+          src='https://docs.google.com/forms/d/e/1FAIpQLSctoMnjeO4pMK3AbjsxuzSOhE5L7Wa3vAD9LrFPBeLJzlAL6Q/viewform?embedded=true'
+          width='700'
           height='500'
           frameborder='0'
           marginheight='0'

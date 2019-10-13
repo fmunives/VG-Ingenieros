@@ -10,19 +10,19 @@ const AboutVG = () => {
     <div className=''>
       <h2 className='t6 color-alt'>Acerca de VG Ingenieros</h2>
       <ul>
-        <li>
+        <li className='without-style '>
           <PorqueVG />
         </li>
-        <li>
+        <li className='without-style '>
           <NuestroTeam />
         </li>
-        <li>
+        <li className='without-style '>
           <NuestrosProfes />
         </li>
-        <li>
+        <li className='without-style '>
           <NuestraVM />
         </li>
-        <li>
+        <li className='without-style'>
           <TrabajaConNosotros />
         </li>
       </ul>

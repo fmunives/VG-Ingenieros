@@ -8,13 +8,13 @@ const ConectWithUs = () => {
     <div className=''>
       <h2 className='t6 color-alt'>Conéctate con VB Ingenieros</h2>
       <ul>
-        <li>
+        <li className='without-style '>
           <Email large />
         </li>
-        <li>
+        <li className='without-style '>
           <Phone color='t-second-color' />
         </li>
-        <li>
+        <li className='without-style '>
           <Celular />
         </li>
       </ul>

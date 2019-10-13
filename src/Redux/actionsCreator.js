@@ -18,8 +18,8 @@ export const getAllCourses = () => dispatch => {
     });
   });
 };
-export const getCourse = () => dispatch => {
-  axios.get(`${API}/curso.json`).then(response => {
+export const getCourse = id => dispatch => {
+  axios.get(`${API}/cursos/${id}.json`).then(response => {
     return dispatch({
       type: SHOW_COURSE,
       course: response.data
