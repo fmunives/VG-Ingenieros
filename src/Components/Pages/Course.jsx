@@ -49,7 +49,19 @@ const Course = ({ course, match }) => {
               </div>
               <h2>Temario del curso {course.titulo} </h2>
               <div className='s-border s-pxy-2 lg-pxy-4 s-radius s-bg-white l-block l-section s-shadow-bottom'>
-                {course.temario}
+                {course.temario.map(t => (
+                  <div className='course-class l-section s-mb-1' key={t.id}>
+                    <h3 className='s-mb-0'>{t.title}</h3>
+                    <p className='s-mb-0'>{t.subtitle}</p>
+                    <ul className=''>
+                      {t.content.map(c => (
+                        <li>
+                          <small>{c.valor}</small>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
             </div>
             <div className='l-cols-3'>

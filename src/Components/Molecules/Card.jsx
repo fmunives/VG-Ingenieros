@@ -26,7 +26,7 @@ const Card = ({ image, image_teacher, teacher, price, title, id }) => {
             className='button--ghost-alert button--tiny'
             href='https://www.facebook.com'
           >
-            {price}
+            {`S/. ${price} `}
           </a>
         </div>
       </div>
