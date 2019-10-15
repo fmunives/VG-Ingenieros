@@ -12,7 +12,7 @@ const Header = () => (
         <NavLink to='/'>
           <img
             className='main-logo'
-            src='https://firebasestorage.googleapis.com/v0/b/vg-ingenieros.appspot.com/o/logo_oficial.svg?alt=media&token=03d98843-5f6b-4735-83f9-aa20f51e2ba4'
+            src='https://firebasestorage.googleapis.com/v0/b/vg-ingenieros.appspot.com/o/logo_ofic_1.svg?alt=media&token=d49da2fc-2ee5-4e6b-92cf-3f004bba363e'
             alt='VG Ingenieros'
           />
         </NavLink>
@@ -20,7 +20,7 @@ const Header = () => (
       <div className='s-cols-1 lg-cols-3 s-cross-center s-main-end'>
         <nav className='main-menu' ref={menu}>
           <ul>
-            <li>
+            <li className='li-menu'>
               <NavLink to='/cursos'>Cursos</NavLink>
             </li>
             <li>
@@ -39,6 +39,7 @@ const Header = () => (
         </nav>
         <div
           className='main-menu-toggle to-l'
+          id='amburguesa'
           onClick={() => {
             toggleMenu();
           }}

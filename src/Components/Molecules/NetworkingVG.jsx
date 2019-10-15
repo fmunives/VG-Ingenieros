@@ -1,8 +1,8 @@
 import React from 'react';
 import Facebook from '../Atoms/Facebook';
 import Twitter from '../Atoms/Twitter';
-import YouTube from '../Atoms/YouTube';
 import LinkedIn from '../Atoms/LinkedIn';
+import Instagram from '../Atoms/Instagram';
 
 const NetworkingVG = () => {
   return (
@@ -17,10 +17,16 @@ const NetworkingVG = () => {
           <Twitter size='2x' address='https://twitter.com/VYGIngenieros' />
         </li>
         <li className='without-style '>
-          <YouTube size='2x' />
+          <Instagram
+            size='2x'
+            address='https://www.instagram.com/grupovygingenieros/?hl=es-la'
+          />
         </li>
         <li className='without-style '>
-          <LinkedIn size='2x' />
+          <LinkedIn
+            size='2x'
+            address='https://www.linkedin.com/company/vg-ingenieros'
+          />
         </li>
       </ul>
     </div>

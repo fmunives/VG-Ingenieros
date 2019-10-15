@@ -5,7 +5,8 @@ import {
   SHOW_SEMINARS,
   SHOW_SEMINAR,
   SHOW_TEAM,
-  SHOW_TEACHERS
+  SHOW_TEACHERS,
+  SHOW_FOUR_COURSES
 } from './actions';
 
 const API = 'https://vg-ingenieros.firebaseio.com';
@@ -15,6 +16,14 @@ export const getAllCourses = () => dispatch => {
     return dispatch({
       type: SHOW_COURSES,
       courses: response.data
+    });
+  });
+};
+export const getFourCourses = () => dispatch => {
+  axios.get(`${API}/cursos.json`).then(response => {
+    return dispatch({
+      type: SHOW_FOUR_COURSES,
+      coursesFour: response.data
     });
   });
 };
