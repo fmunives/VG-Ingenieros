@@ -16,6 +16,8 @@ const Form = () => {
           marginwidth='0'
           className='s-border s-radius-br s-radius-bl s-pxy-2'
         />
+        <script src='https://apps.elfsight.com/p/platform.js' defer></script>
+        <div class='elfsight-app-0c824864-2eab-4349-b99a-3e5714705534'></div>
       </div>
 
       {/* <form className='ed-container' id='contactForm'>
