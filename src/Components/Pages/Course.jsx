@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import store from '../../Redux/store';
 import { getCourse } from '../../Redux/actionsCreator';
 import { Link } from 'react-router-dom';
+import WhatsApp from '../Atoms/WhatsApp';
 
 const Course = ({ course, match }) => {
   useEffect(() => {
@@ -26,7 +27,7 @@ const Course = ({ course, match }) => {
           />
           <main className='ed-grid lg-grid-10'>
             <div className='l-cols-7'>
-              <div className='course-feature ed-grid lg-grid-4 l-block s-border s-pxy-2 lg-pxy-4 s-radius s-bg-white l-block l-section s-shadow-bottom'>
+              <div className='course-feature ed-grid lg-grid-5 l-block s-border s-pxy-2 lg-pxy-4 s-radius s-bg-white l-block l-section s-shadow-bottom'>
                 <div>
                   <h3 className='t4'>¿Qué aprenderás?</h3>
                   <ul
@@ -45,6 +46,11 @@ const Course = ({ course, match }) => {
                 <div>
                   <h3 className='t4'>Duración</h3>
                   <p>{`${course.duracion} horas`}</p>
+                </div>
+                <div>
+                  <h3 className='t4'>Vacantes</h3>
+                  <p>{`${course.vacantes_disponibles -
+                    course.vacantes_ocupadas}`}</p>
                 </div>
               </div>
               <h2>Temario del curso {course.titulo} </h2>
@@ -103,24 +109,22 @@ const Course = ({ course, match }) => {
                 </a>
                 <p>
                   <small>
-                    La reserva tiene una duración de 48h. Te esperamos en el
-                    curso!.
+                    La reserva tiene una duración de 48h. No olvides enviarnos
+                    un correo a cursos@vgingenieros.com con el comprobante de
+                    pago para finalizar tu compra.{' '}
                   </small>
                 </p>
                 <p className='m-center m-to-center m-75'>
                   <small>
-                    <a
-                      href='https://forms.gle/VBvQd7CvenDgc6HR9'
-                      target='_blank'
-                    >
-                      ¿Ya realizar el pago?
+                    <a href='mailto:cursos@vgingnieros.com' target='_blank'>
+                      ¿Ya realizaste el pago?
                     </a>
                   </small>
                 </p>
                 <p className=''>
                   <small className=''>
-                    Si tienes algunda duda puedes{' '}
-                    <Link to='../contacto'>contactarnos</Link>
+                    Cualquier duda, escríbenos a:{' '}
+                    <Link to='../contacto'>contacto</Link>{' '}
                   </small>
                 </p>
               </div>
