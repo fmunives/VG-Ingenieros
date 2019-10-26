@@ -44,7 +44,7 @@ const Home = ({ coursesFour }) => {
           </div>
           <div className='ed grid center'>
             <h3>
-              <Link to='../cursos' className='button ghost third-color'>
+              <Link to='../cursos' className='btn btn-outline-red rounded'>
                 ver todos los cursos
               </Link>
             </h3>

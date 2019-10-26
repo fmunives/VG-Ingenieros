@@ -12,11 +12,15 @@ import { Provider } from 'react-redux';
 import store from '../Redux/store';
 import Footer from './Organisms/Footer';
 import Course from './Pages/Course';
+import NavbarPage from './Organisms/Navbar';
+import ImageCarousel from './Atoms/ImageCarousel';
+import MultiCarouselPage from './Atoms/ImageCarousel';
 
 const App = () => (
   <Provider store={store}>
     <Router>
-      <Header />
+      <NavbarPage />
+      {/*  <Header /> */}
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/cursos/:id' component={Course} />

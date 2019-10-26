@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Card = ({ image, image_teacher, teacher, price, title, id }) => {
   return (
-    <article className='card s-radius s-border '>
+    <article className='card s-radius '>
       <div className='img-container s-ratio-16-9 s-radius-tr s-radius-tl'>
         <Link to={`/cursos/${id}`}>
           <img src={image} alt={title} />
@@ -27,12 +27,12 @@ const Card = ({ image, image_teacher, teacher, price, title, id }) => {
           </div>
         </div>
         <div className='s-main-center'>
-          <a
+          <Link
             className='button--ghost-alert button--tiny'
-            href='https://www.facebook.com'
+            to={`/cursos/${id}`}
           >
             {`S/. ${price} `}
-          </a>
+          </Link>
         </div>
       </div>
     </article>

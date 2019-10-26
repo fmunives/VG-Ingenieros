@@ -42,7 +42,7 @@ const Seminars = ({ seminars }) => {
                       <a
                         href={s.url_form}
                         target='_blank'
-                        className='button ghost third-color full'
+                        className='button ghost dark-color full'
                       >
                         Inscribirse
                       </a>

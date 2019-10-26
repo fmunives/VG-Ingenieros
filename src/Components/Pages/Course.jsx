@@ -5,6 +5,7 @@ import store from '../../Redux/store';
 import { getCourse } from '../../Redux/actionsCreator';
 import { Link } from 'react-router-dom';
 import WhatsApp from '../Atoms/WhatsApp';
+import { MDBBtn } from 'mdbreact';
 
 const Course = ({ course, match }) => {
   useEffect(() => {
@@ -90,6 +91,9 @@ const Course = ({ course, match }) => {
                 <h3 className='t4'>Detalles del pago del curso</h3>
                 <ul className='feature-list'>
                   <li>
+                    <strong>Costo: </strong> {`S/. ${course.precio}`}
+                  </li>
+                  <li>
                     <strong>Cuenta BCP: </strong> 193-2619069-0-41
                   </li>
                   <li>
@@ -100,13 +104,21 @@ const Course = ({ course, match }) => {
                     Construcción
                   </li>
                 </ul>
-                <a
+                {/* <a
                   className='button full'
                   href='https://forms.gle/VBvQd7CvenDgc6HR9'
                   target='_blank'
                 >
                   inscribirse
-                </a>
+                </a> */}
+                <MDBBtn
+                  href='https://forms.gle/VBvQd7CvenDgc6HR9'
+                  target='_blank'
+                  color='mdb-color'
+                  className='btn-block'
+                >
+                  Inscríbirse
+                </MDBBtn>
                 <p>
                   <small>
                     La reserva tiene una duración de 48h. No olvides enviarnos

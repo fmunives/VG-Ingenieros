@@ -15,5 +15,21 @@
   color: #53575a;
 }
 
+.main-logov2 {
+  width: 150px;
+}
+
+/* modifcaciones de edgrid */
+
 @import '~ed-grid';
 @import '~edteam-style-guides/edteam-style-guides';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import '~bootstrap-css-only/css/bootstrap.min.css';
+@import '~mdbreact/dist/css/mdb.css';
+
+/* Import MDB Bootstrap */
+
+.color-borde {
+  border: 1px solid #e90909;
+  box-shadow: none;
+}

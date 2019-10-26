@@ -4,6 +4,8 @@ import Card from '../Molecules/Card';
 import { connect } from 'react-redux';
 import store from '../../Redux/store';
 import { getAllCourses } from '../../Redux/actionsCreator';
+import withLoader from '../HOC/withLoader';
+import CourseGrid from '../Organisms/CourseGrid';
 
 const Courses = ({ courses }) => {
   useEffect(() => {
@@ -21,20 +23,7 @@ const Courses = ({ courses }) => {
           alt: 'cursos de Ingeniería'
         }}
       />
-      {courses && (
-        <div className='ed-grid m-grid-3 lg-grid-4'>
-          {courses.map(c => (
-            <Card
-              id={c.id}
-              title={c.titulo}
-              teacher={c.teacher}
-              image={c.url}
-              image_teacher={c.teacher_url}
-              price={c.precio}
-            />
-          ))}
-        </div>
-      )}
+      {courses && <CourseGrid courses={courses} />}
     </>
   );
 };

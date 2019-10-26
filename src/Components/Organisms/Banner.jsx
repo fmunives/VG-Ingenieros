@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { MDBBtn } from 'mdbreact';
+import ImageCarousel from '../Atoms/ImageCarousel';
 
 const Banner = ({
   title,
@@ -26,7 +28,7 @@ const Banner = ({
               <div className='main-banner__data s-center'>
                 <h1 className='main-banner__title'>{title}</h1>
                 <p className=''>{subtitle}</p>
-                <Link to='/cursos' className='button second-color s-mb-2'>
+                <Link to='/cursos' className='btn danger-color'>
                   {boton}
                 </Link>
               </div>
@@ -41,13 +43,21 @@ const Banner = ({
                 <p className='s-opacity-6'>{subtitle}</p>
                 <p>{content}</p>
                 <div className='m-50'>
-                  <a
+                  {/* <a
                     href='https://forms.gle/xGcuV8ckSHD6zSXh9'
                     target='_blank'
-                    className={`button ${colorBoton} s-mb-2 full big`}
+                    className={`button ${colorBoton} s-mb-2 ghost full big`}
                   >
                     {boton}
-                  </a>
+                  </a> */}
+                  <MDBBtn
+                    href='https://forms.gle/xGcuV8ckSHD6zSXh9'
+                    target='_blank'
+                    color='elegant'
+                    className='btn-block'
+                  >
+                    {boton}
+                  </MDBBtn>
                 </div>
               </div>
               <div className='img-container s-ratio-16-9 m-cols-1 s-radius-tr s-radius-tl s-radius-bl s-radius-br'>
