@@ -1,5 +1,6 @@
 import React from 'react';
 import Iframe from 'react-iframe';
+import FirebaseConfig from './Firebase';
 
 const Form = () => {
   return (
@@ -59,6 +60,7 @@ const Form = () => {
             <input className='button ghost full' type='submit' value='Enviar' />
           </div>
         </form>
+        <script src='./ContacForm.js'></script>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import Banner from '../Organisms/Banner';
 import Form from '../Organisms/Form';
 import AddressGrid from '../Organisms/AddressGrid';
 import Iframe from 'react-iframe';
+import FormClass from '../Organisms/FormClass';
 
 const Contact = () => {
   return (
@@ -18,7 +19,8 @@ const Contact = () => {
         }}
       />
       <div className='ed-grid m-grid-6'>
-        <Form />
+        {/* <Form /> */}
+        <FormClass />
         <AddressGrid />
       </div>
       <div className='ed-container ' id='map'>
