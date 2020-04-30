@@ -13,7 +13,7 @@
     "ed-grid": "^2.9.0",
     "edteam-style-guides": "^0.0.59",
     "firebase": "^7.2.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mdbreact": "^4.21.1",
     "node-sass": "^4.12.0",
     "popper.js": "^1.16.0",
